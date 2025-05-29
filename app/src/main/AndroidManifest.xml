@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.topline121022022064">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- CC视频播放需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- SD卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.topline121022022064.TopLineApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="86e5eedc821be0edd51fa307a5da15d3" />
+        <activity
+            android:name="com.example.topline121022022064.activity.MapActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.ScrawActivity"
+            android:theme="@style/AppTheme.NoTitle.Dialog" />
+        <activity
+            android:name="com.example.topline121022022064.activity.ChooseConstellationActivity"
+            android:theme="@style/AppTheme.NoTitle.Dialog" />
+        <activity
+            android:name="com.example.topline121022022064.activity.ConstellationActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.CalendarActivity"
+            android:theme="@style/AppTheme.NoTitle.Dialog" />
+        <activity
+            android:name="com.example.topline121022022064.activity.FindPswActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.ModifyPswActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.SettingActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity android:name="com.example.topline121022022064.activity.CollectionActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.ChangeUserInfoActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.UserInfoActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.LoginActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity android:name="com.example.topline121022022064.activity.RegisterActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.VideoDetailActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="sensor" />
+        <activity android:name="com.example.topline121022022064.activity.JavaCountActivity" />
+        <activity
+            android:name="com.example.topline121022022064.activity.AndroidCountActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <activity android:name="com.example.topline121022022064.activity.PythonActivity" />
+        <activity android:name="com.example.topline121022022064.activity.NewsDetailActivity" />
+        <activity android:name="com.example.topline121022022064.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.topline121022022064.MainActivity" />
+    </application>
+
+</manifest>
